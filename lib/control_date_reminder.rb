@@ -45,6 +45,8 @@ module ControlDateReminder
 
     managers = User.find(ids)
 
+    p "ids = " + ids
+
     managers.each do |manager|
       issues = Issue.find_by_sql(["SELECT DISTINCT issues.*, issues.id FROM roles LEFT JOIN member_roles ON roles.id = member_roles.role_id" +
         " LEFT JOIN members ON member_roles.member_id = members.id LEFT JOIN users ON users.id = members.user_id" +
