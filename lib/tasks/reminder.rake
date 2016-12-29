@@ -16,7 +16,7 @@ namespace :redmine do
     options = {}
     options[:days] = ENV['days'].to_i if ENV['days']
     options[:field_id] = ENV['field_id'].to_i if ENV['field_id']
-    options[:users] = (ENV['users'] || '').split(',').each(&:strip!)
+    options[:users] = (ENV['users'] || '').split(',').each(&:strip!).map(&:to_i)
 
     Mailer.with_synched_deliveries do
       ControlDateReminder.remind_users(options)
