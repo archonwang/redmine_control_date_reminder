@@ -41,8 +41,8 @@ module ControlDateReminder
 
     manager_ids = Role.find_by_name("Менеджер").members.group(:user_id).map(&:user_id)
 
-    p "manager_ids = " + manager_ids.join(", ") + " type = " + manager_ids.type
-    p "@user_ids = " + @user_ids.join(", ") + " type = " + @user_ids.type
+    p "manager_ids = " + manager_ids.join(", ") + " type = " + manager_ids.class
+    p "@user_ids = " + @user_ids.join(", ") + " type = " + @user_ids.class
     p (manager_ids & @user_ids).join(", ")
 
     ids = @user_ids.present? ? (manager_ids & @user_ids) : manager_ids
