@@ -1,0 +1,26 @@
+custom_fields_001:
+  name: Control date
+  regexp: ""
+  is_for_all: true
+  is_filter: false
+  type: IssueCustomField
+  possible_values: ""
+  id: 1
+  is_required: true
+  field_format: date
+  default_value: ""
+  editable: true
+  position: 4
+custom_fields_002: 
+  name: Custom date
+  regexp: ""
+  is_for_all: true
+  is_filter: false
+  type: IssueCustomField
+  possible_values: ""
+  id: 2
+  is_required: false
+  field_format: date
+  default_value: ""
+  editable: true
+  position: 5

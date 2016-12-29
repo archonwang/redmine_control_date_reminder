@@ -1,0 +1,6 @@
+ru:
+  mail_subject_reminder_by_control_date: "Напоминание о дате контроля задач"
+  mail_subject_reminder_by_control_date_to_author: "Напоминание о дате контроля задач постановщику задач"
+  mail_subject_reminder_by_control_date_to_assigned_to: "Напоминание о дате контроля задач исполнителю"
+  mail_subject_reminder_by_control_date_to_manager: "Напоминание о дате контроля задач менеджеру"
+  mail_body_reminder_by_control_date: "У следующих задач дата контроля заканчивается через %{days} день или закончилась :"

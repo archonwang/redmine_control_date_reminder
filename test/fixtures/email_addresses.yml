@@ -1,0 +1,36 @@
+--- 
+email_address_001:
+  id: 1
+  user_id: 1
+  address: admin@somenet.foo
+  is_default: true
+  created_on: 2006-07-19 19:34:07 +02:00
+  updated_on: 2006-07-19 19:34:07 +02:00
+email_address_002:
+  id: 2
+  user_id: 2
+  address: manager_1@somenet.foo
+  is_default: true
+  created_on: 2006-07-19 19:34:07 +02:00
+  updated_on: 2006-07-19 19:34:07 +02:00
+email_address_003:
+  id: 3
+  user_id: 3
+  address: manager_2@somenet.foo
+  is_default: true
+  created_on: 2006-07-19 19:34:07 +02:00
+  updated_on: 2006-07-19 19:34:07 +02:00
+email_address_004:
+  id: 4
+  user_id: 4
+  address: author@somenet.foo
+  is_default: true
+  created_on: 2006-07-19 19:34:07 +02:00
+  updated_on: 2006-07-19 19:34:07 +02:00
+email_address_005:
+  id: 5
+  user_id: 5
+  address: assigned_to@somenet.foo
+  is_default: true
+  created_on: 2006-07-19 19:34:07 +02:00
+  updated_on: 2006-07-19 19:34:07 +02:00

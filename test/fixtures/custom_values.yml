@@ -1,0 +1,36 @@
+custom_values_001: 
+  customized_type: Issue
+  custom_field_id: 1
+  customized_id: 1
+  id: 1
+  value: <%= 7.days.ago.to_s(:db) %>
+custom_values_002: 
+  customized_type: Issue
+  custom_field_id: 1
+  customized_id: 2
+  id: 2
+  value: <%= 7.days.since.to_s(:db) %>
+custom_values_003: 
+  customized_type: Issue
+  custom_field_id: 2
+  customized_id: 2
+  id: 3
+  value: <%= 7.days.ago.to_s(:db) %>
+custom_values_004: 
+  customized_type: Issue
+  custom_field_id: 1
+  customized_id: 3
+  id: 4
+  value: <%= 7.days.since.to_s(:db) %>
+custom_values_005: 
+  customized_type: Issue
+  custom_field_id: 1
+  customized_id: 4
+  id: 5
+  value: <%= 4.days.since.to_s(:db) %>
+custom_values_006: 
+  customized_type: Issue
+  custom_field_id: 1
+  customized_id: 5
+  id: 6
+  value: <%= 40.days.ago.to_s(:db) %>
