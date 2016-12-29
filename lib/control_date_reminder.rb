@@ -41,11 +41,11 @@ module ControlDateReminder
 
     manager_ids = Role.find_by_name("Менеджер").members.group(:user_id).map(&:user_id)
 
+    p "manager_ids = " + manager_ids.join(",")
+
     ids = @user_ids.present? ? (manager_ids & @user_ids) : manager_ids
 
     managers = User.find(ids)
-
-    p "ids = " + ids.join(", ")
 
     managers.each do |manager|
       issues = Issue.find_by_sql(["SELECT DISTINCT issues.*, issues.id FROM roles LEFT JOIN member_roles ON roles.id = member_roles.role_id" +
