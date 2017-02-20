@@ -1,9 +1,5 @@
-def patch_class(clazz, patch)
-  clazz.send(:include, patch) unless clazz.include?(patch)
-end
-
 Rails.configuration.to_prepare do
-  patch_class Mailer, ControlDateReminder::Patches::MailerPatch
+  Mailer.send(:include, ControlDateReminder::Patches::MailerPatch)
 end
 
 Redmine::Plugin.register :redmine_control_date_reminder do
